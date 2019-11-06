@@ -1,16 +1,8 @@
 require 'directors_database'
 
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
-
-
 
 def directors_totals(nds)
   result = {}
-  
-
   which_dir = 0
   while dirs < nds.count do
     earnings = 0
@@ -22,19 +14,14 @@ def directors_totals(nds)
     result[nds[which_dir][:name]] = earnings
     which_dir += 1
   end
-  hash
+  result
 end
-
-  
-end
-
-
-
-
 
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
+
+
 def gross_for_director(director_data)
   
   
