@@ -2,7 +2,7 @@ require 'directors_database'
 
 
 
-def gross_for_director(director_data)
+def gross_for_director(nds[which_dir][:movies].length)
   earnings = 0
   which_mov = 0
   while which_mov < nds[which_dir][:movies].length do
