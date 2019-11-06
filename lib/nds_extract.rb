@@ -1,6 +1,7 @@
 require 'directors_database'
 
 
+
 def directors_totals(nds)
   result = {}
   which_dir = 0
