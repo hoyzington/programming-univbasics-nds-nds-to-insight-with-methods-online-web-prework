@@ -17,7 +17,7 @@ def directors_totals(nds)
     which_mov = 0
     while which_mov < nds[which_dir][:movies].count
       earnings += nds[which_dir][:movies][which_mov][:worldwide_gross]
-      movs += 1
+      which_mov += 1
     end
     hash[nds[which_dir][:name]] = earnings
     which_dir += 1
