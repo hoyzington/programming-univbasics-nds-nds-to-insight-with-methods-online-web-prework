@@ -2,7 +2,7 @@ require 'directors_database'
 
 
 
-def gross_for_director(nds[which_dir][:movies].length)
+def gross_for_director(nds, [which_dir])
   earnings = 0
   which_mov = 0
   while which_mov < nds[which_dir][:movies].length do
@@ -16,9 +16,8 @@ end
 def directors_totals(nds)
   result = {}
   which_dir = 0
-  
   while which_dir < nds.length do
-    result[nds[which_dir][:name]] = gross_for_director(nds[which_dir][:movies].length)
+    result[nds[which_dir][:name]] = gross_for_director
     which_dir += 1
   end
   result
