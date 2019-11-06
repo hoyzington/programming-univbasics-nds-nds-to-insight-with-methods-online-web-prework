@@ -19,7 +19,7 @@ def directors_totals(nds)
       earnings += nds[which_dir][:movies][movs][:worldwide_gross]
       movs += 1
     end
-    hash[nds[dirs][:name]] = earnings
+    hash[nds[which_dir][:name]] = earnings
     dirs += 1
   end
   hash
