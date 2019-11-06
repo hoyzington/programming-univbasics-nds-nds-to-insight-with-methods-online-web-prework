@@ -16,10 +16,9 @@ end
 def directors_totals(nds)
   result = {}
   which_dir = 0
-  
+  director_data = nds[which_dir][:movies].length
   while which_dir < nds.length do
-    
-    result[nds[which_dir][:name]] = gross_for_director(director_data)
+    result[nds[which_dir][:name]] = gross_for_director
     which_dir += 1
   end
   result
