@@ -21,7 +21,7 @@ def gross_for_director(director_data)
   earnings = 0
   which_mov = 0
   while which_mov < director_data[:movies].length do
-    earnings += nds[which_dir][:movies][which_mov][:worldwide_gross]
+    earnings += director_data[:movies][which_mov][:worldwide_gross]
     which_mov += 1
   end
   earnings 
