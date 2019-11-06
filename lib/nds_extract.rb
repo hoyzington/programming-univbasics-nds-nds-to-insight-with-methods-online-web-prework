@@ -4,8 +4,8 @@ require 'directors_database'
 def directors_totals(nds)
   result = {}
   which_dir = 0
-  while which_dir < nds.size do
-    director_data = nds[which_dir][:movies].size
+  while which_dir < nds.length do
+    director_data = nds[which_dir][:movies].length
     result[nds[which_dir][:name]] = gross_for_director(director_data)
     which_dir += 1
   end
