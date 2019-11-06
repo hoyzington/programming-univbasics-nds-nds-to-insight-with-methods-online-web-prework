@@ -14,13 +14,13 @@ def directors_totals(nds)
   which_dir = 0
   while dirs < nds.count do
     earnings = 0
-    movs = 0
+    which_mov = 0
     while movs < nds[which_dir][:movies].count
       earnings += nds[which_dir][:movies][movs][:worldwide_gross]
       movs += 1
     end
     hash[nds[which_dir][:name]] = earnings
-    dirs += 1
+    which_dir += 1
   end
   hash
 end
