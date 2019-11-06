@@ -17,7 +17,7 @@ def directors_totals(nds)
   result = {}
   which_dir = 0
   while which_dir < nds.length do
-    result[nds[which_dir][:name]] = gross_for_director(nds, which_dir)
+    result[nds[which_dir][:name]] = gross_for_director(directors_database, which_dir)
     which_dir += 1
   end
   result
